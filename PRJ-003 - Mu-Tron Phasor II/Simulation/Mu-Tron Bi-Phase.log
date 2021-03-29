@@ -1,0 +1,94 @@
+Circuit: * D:\Sync\Sync - Projects\PRJ-003 - Mu-Tron Phasor II\Simulation\Mu-Tron Bi-Phase.asc
+
+WARNING: Node N006 is floating.
+
+WARNING: Less than two connections to node NC_01.  This node is used by R:U8:0.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 6.68666
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 6.72377
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 6.72131
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 6.77083%
+Source Step = 7.24432%
+Source Step = 7.7178%
+Source Step = 8.19129%
+Source Step = 8.66477%
+vernier = 0.0234375
+Source Step = 9.18561%
+Source Step = 9.89583%
+Source Step = 10.6061%
+Source Step = 11.3163%
+Source Step = 12.0265%
+vernier = 0.0351563
+Source Step = 12.7723%
+Source Step = 13.8376%
+Source Step = 14.9029%
+Source Step = 15.9683%
+Source Step = 17.0336%
+Source Step = 18.099%
+vernier = 0.0527344
+Source Step = 19.697%
+Source Step = 21.295%
+Source Step = 22.893%
+Source Step = 24.491%
+Source Step = 26.089%
+vernier = 0.0791016
+Source Step = 28.4061%
+Source Step = 30.8031%
+Source Step = 33.2002%
+Source Step = 35.5972%
+Source Step = 37.9942%
+vernier = 0.118652
+Source Step = 41.35%
+Source Step = 44.9455%
+Source Step = 48.5411%
+Source Step = 52.1366%
+Source Step = 55.7321%
+vernier = 0.177979
+Source Step = 60.5861%
+Source Step = 65.9794%
+Source Step = 71.3727%
+Source Step = 76.766%
+Source Step = 82.1592%
+vernier = 0.266968
+Source Step = 89.1705%
+Source Step = 97.2604%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Fri Feb 14 16:37:23 2020
+Total elapsed time: 5.062 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 27832
+traniter = 24768
+tranpoints = 8354
+accept = 6010
+rejected = 2344
+matrix size = 132
+fillins = 2280
+solver = Normal
+Thread vector: 11.7/8.6[3] 4.7/4.6[1] 4.4/5.0[1] 1.5/2.8[1]  2592/500
+Matrix Compiler1: 551.94 KB object code size  136.5/57.8/[28.8]
+Matrix Compiler2: 49.74 KB object code size  8.8/6.2/[3.8]
+

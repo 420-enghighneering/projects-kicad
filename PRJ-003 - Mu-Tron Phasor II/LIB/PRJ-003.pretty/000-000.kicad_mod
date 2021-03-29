@@ -1,0 +1,13 @@
+(module "000-000" (layer F.Cu) (tedit 5E364E2A)
+  (fp_text reference "REF**" (at 0 0.5 unlocked) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "000-000" (at 0 -0.5 unlocked) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (model "D:/Sync/Sync - Projects/PRJ-003 - Mu-Tron Phasor II/#000-000 - Final Assembly/#000-000 - Mu-Tron Phasor II - Manual Assembly.step"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)

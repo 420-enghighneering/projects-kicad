@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+LIBS:#610-000-S1C - Power Jack PCB [1614 09, Narrow, Minimal Protection]-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistors_MOSFET_P_Channel:ON_Semi_MCH6341-TL-W Q1
+U 1 1 5DAF485E
+P 6550 3800
+F 0 "Q1" V 6839 3800 39  0000 C CNB
+F 1 "ON_Semi_MCH6341-TL-W" V 6779 3800 20  0000 C CNB
+F 2 "Transistors_MOSFET_P_Channel_SMD:ON_Semi_MCH6341-TL-W" H 6550 3550 20  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MCH6341-D.PDF" H 6550 3800 50  0001 C CNN
+	1    6550 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 3700 6150 3700
+Wire Wire Line
+	6000 3900 6000 4000
+Wire Wire Line
+	6000 4000 6150 4000
+Wire Wire Line
+	7050 3700 6750 3700
+Connection ~ 6550 4000
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 5DAF9B9A
+P 7250 3700
+F 0 "J1" H 7278 3726 50  0000 L CNN
+F 1 "Wire_+VDC" H 7278 3635 50  0000 L CNN
+F 2 "PRJ-003:E_WIRE_PAD" H 7250 3700 50  0001 C CNN
+F 3 "~" H 7250 3700 50  0001 C CNN
+	1    7250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5DAF9ED5
+P 7250 4000
+F 0 "J3" H 7278 4026 50  0000 L CNN
+F 1 "Wire_-VDC" H 7278 3935 50  0000 L CNN
+F 2 "PRJ-003:E_WIRE_PAD" H 7250 4000 50  0001 C CNN
+F 3 "~" H 7250 4000 50  0001 C CNN
+	1    7250 4000
+	1    0    0    -1  
+$EndComp
+Text Label 6850 3700 0    50   ~ 0
++VDC
+Text Label 6850 4000 0    50   ~ 0
+-VDC
+$Comp
+L Connectors_Wire_Pads:NPTH H1
+U 1 1 5E567196
+P 8400 3800
+F 0 "H1" H 8478 3846 50  0000 L CNN
+F 1 "NPTH" H 8478 3755 50  0000 L CNN
+F 2 "PRJ-003:E_ZIPTIE_NPTH" H 8400 3800 50  0001 C CNN
+F 3 "" H 8400 3800 50  0001 C CNN
+	1    8400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connectors_Wire_Pads:NPTH H2
+U 1 1 5E5672E7
+P 8400 4000
+F 0 "H2" H 8478 4046 50  0000 L CNN
+F 1 "NPTH" H 8478 3955 50  0000 L CNN
+F 2 "PRJ-003:E_ZIPTIE_NPTH" H 8400 4000 50  0001 C CNN
+F 3 "" H 8400 4000 50  0001 C CNN
+	1    8400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connectors_Jacks_DC_2.1:Lumberg_1614_09 J2
+U 1 1 5E56C318
+P 5700 3800
+F 0 "J2" H 5757 4061 39  0000 C CNB
+F 1 "Lumberg_1614_09" H 5757 4002 20  0000 C CNN
+F 2 "PRJ-003:J_POWER_SMALL" H 5700 3800 20  0001 C CNN
+F 3 "https://downloads.lumberg.com/datenblaetter/en/1614_09.pdf" H 5750 3840 50  0001 C CNN
+	1    5700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connectors_Wire_Pads:NPTH H3
+U 1 1 5DEF8591
+P 8400 4200
+F 0 "H3" H 8478 4246 50  0000 L CNN
+F 1 "NPTH" H 8478 4155 50  0000 L CNN
+F 2 "PRJ-003:E_ZIPTIE_NPTH" H 8400 4200 50  0001 C CNN
+F 3 "" H 8400 4200 50  0001 C CNN
+	1    8400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connectors_Wire_Pads:NPTH H4
+U 1 1 5DEF859B
+P 8400 4400
+F 0 "H4" H 8478 4446 50  0000 L CNN
+F 1 "NPTH" H 8478 4355 50  0000 L CNN
+F 2 "PRJ-003:E_ZIPTIE_NPTH" H 8400 4400 50  0001 C CNN
+F 3 "" H 8400 4400 50  0001 C CNN
+	1    8400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diodes_Zener:ON_Semi_1SMA5924BT3G D1
+U 1 1 5E202160
+P 6150 3850
+F 0 "D1" V 6400 3800 50  0000 L CNN
+F 1 "ON_Semi_1SMA5924BT3G" V 6500 3350 50  0000 L CNN
+F 2 "Diodes_Zener_SMD:ON_Semi_1SMA5924BT3G" H 6150 3850 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF" H 6150 3850 50  0001 C CNN
+	1    6150 3850
+	0    1    1    0   
+$EndComp
+Connection ~ 6150 4000
+Wire Wire Line
+	6150 4000 6550 4000
+Connection ~ 6150 3700
+Wire Wire Line
+	6150 3700 6000 3700
+Wire Wire Line
+	6550 4000 7050 4000
+$EndSCHEMATC

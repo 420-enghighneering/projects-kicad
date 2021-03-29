@@ -1,0 +1,30 @@
+Circuit: * D:\Sync\Sync - Projects\PRJ-003 - Mu-Tron Phasor II\Simulation\oscillator_pots.asc
+
+WARNING: Node NC_02 is floating.
+
+WARNING: Less than two connections to node NC_01.  This node is used by R:U5:0.
+WARNING: Less than two connections to node NC_02.  This node is used by R:U5:1.
+Direct Newton iteration for .op point succeeded.
+.step sweepoffset=0.15
+.step sweepoffset=0.4
+.step sweepoffset=0.6
+.step sweepoffset=0.85
+
+Date: Mon Dec 16 11:27:18 2019
+Total elapsed time: 1.407 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 18261
+traniter = 18241
+tranpoints = 4909
+accept = 3842
+rejected = 1067
+matrix size = 47
+fillins = 49
+solver = Normal
+Thread vector: 12.6/7.9[2] 2.7/2.4[2] 1.9/2.0[1] 0.2/1.5[1]  2592/500
+Matrix Compiler1: 5.94 KB object code size  1.7/0.6/[0.3]
+Matrix Compiler2: 5.42 KB object code size  0.5/0.7/[0.3]
+

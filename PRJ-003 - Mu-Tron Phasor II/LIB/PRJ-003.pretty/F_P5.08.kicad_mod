@@ -1,0 +1,23 @@
+(module "F_P5.08" (layer F.Cu) (tedit 5E34A902)
+  (fp_text reference "REF**" (at 0 -1.92) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "F_P5.08" (at 0 1.92) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -2.54 0) (end 2.54 0) (layer F.Fab) (width 0.1))
+  (fp_line (start -3.59 -1.05) (end -3.59 1.05) (layer F.CrtYd) (width 0.05))
+  (fp_line (start -3.59 1.05) (end 3.49 1.05) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 3.49 1.05) (end 3.49 -1.05) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 3.49 -1.05) (end -3.59 -1.05) (layer F.CrtYd) (width 0.05))
+  (fp_text user "%R" (at 0 -1.92) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "2" thru_hole oval (at 2.54 0) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask))
+  (pad "1" thru_hole circle (at -2.54 0) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask))
+  (model "D:/Sync/Sync - Projects/Projects - FreeCad/FreeCad - Designs/TE Connectivity - RXEF020/TE_Connectivity_RXE020.step"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)

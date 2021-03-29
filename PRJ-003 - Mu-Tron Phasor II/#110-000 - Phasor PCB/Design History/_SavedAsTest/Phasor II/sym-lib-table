@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "#110-000-S1A_-_Phasor_PCB-rescue")(type "Legacy")(uri "${KIPRJMOD}/Phasor II-rescue.lib")(options "")(descr ""))
+)

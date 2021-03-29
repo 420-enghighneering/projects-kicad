@@ -1,0 +1,487 @@
+EESchema Schematic File Version 4
+LIBS:#410-000-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "PRJ-002: Bypass Switching Systems"
+Date "2019-09-14"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Resistors:R R3
+U 1 1 5D7D293A
+P 5400 4750
+F 0 "R3" H 5330 4704 50  0000 R CNN
+F 1 "150k" H 5330 4795 50  0000 R CNN
+F 2 "PRJ-003:R_P10.16" V 5330 4750 50  0001 C CNN
+F 3 "" H 5400 4750 50  0001 C CNN
+	1    5400 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Resistors:R R5
+U 1 1 5D7D43DA
+P 6150 4150
+F 0 "R5" H 6080 4104 50  0000 R CNN
+F 1 "47R" H 6080 4195 50  0000 R CNN
+F 2 "PRJ-003:R_P10.16" V 6080 4150 50  0001 C CNN
+F 3 "" H 6150 4150 50  0001 C CNN
+	1    6150 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Resistors:R R4
+U 1 1 5D7D4BB7
+P 5800 4750
+F 0 "R4" H 5730 4704 50  0000 R CNN
+F 1 "15k" H 5730 4795 50  0000 R CNN
+F 2 "PRJ-003:R_P10.16" V 5730 4750 50  0001 C CNN
+F 3 "" H 5800 4750 50  0001 C CNN
+	1    5800 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 4000 6150 3900
+Wire Wire Line
+	6150 3900 5800 3900
+Wire Wire Line
+	5800 3900 5800 4000
+Wire Wire Line
+	5800 4400 5800 4500
+Wire Wire Line
+	5850 4500 5800 4500
+Connection ~ 5800 4500
+Wire Wire Line
+	5800 4500 5800 4600
+Wire Wire Line
+	5400 4900 5400 5000
+Wire Wire Line
+	5800 5000 5800 4900
+Wire Wire Line
+	5800 5000 6150 5000
+Wire Wire Line
+	6150 5000 6150 4700
+Connection ~ 5800 5000
+$Comp
+L Relays:Kemet_EA2-5SNJ K1
+U 1 1 5D7D777F
+P 6550 4500
+F 0 "K1" H 6600 4300 50  0000 L CNN
+F 1 "EA2-5SNJ" H 6600 4200 50  0000 L CNN
+F 2 "PRJ-003:U_DIP-10" H 6750 4400 50  0001 L CNN
+F 3 "https://content.kemet.com/datasheets/KEM_R7001_EA2_EB2.pdf" H 6750 4600 50  0001 C CNN
+	1    6550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:CP C3
+U 1 1 5D7D8819
+P 6550 4150
+F 0 "C3" H 6665 4196 50  0000 L CNN
+F 1 "100u" H 6665 4105 50  0000 L CNN
+F 2 "PRJ-003:C_UMA1V100MDD" H 6550 4150 50  0001 C CNN
+F 3 "~" H 6550 4150 50  0001 C CNN
+	1    6550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4000 6550 3900
+Wire Wire Line
+	6550 3900 6150 3900
+Connection ~ 6150 3900
+Wire Wire Line
+	6550 4300 6550 4350
+Wire Wire Line
+	6550 4650 6550 5000
+Wire Wire Line
+	6550 5000 6150 5000
+Connection ~ 6150 5000
+$Comp
+L power:GND #PWR06
+U 1 1 5D7DC8E1
+P 6550 5000
+F 0 "#PWR06" H 6550 4750 50  0001 C CNN
+F 1 "GND" H 6555 4827 50  0000 C CNN
+F 2 "" H 6550 5000 50  0001 C CNN
+F 3 "" H 6550 5000 50  0001 C CNN
+	1    6550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diodes:ON_Semi_1N4148WS D1
+U 1 1 5D7DD515
+P 5600 3900
+F 0 "D1" H 5600 3684 50  0000 C CNN
+F 1 "1N4148" H 5600 3775 50  0000 C CNN
+F 2 "PRJ-003:D_P10.16_DO35" H 5600 3900 50  0001 C CNN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/1N914BWS-D.pdf" H 5600 3900 50  0001 C CNN
+	1    5600 3900
+	-1   0    0    1   
+$EndComp
+Connection ~ 5800 3900
+Text Notes 3050 5650 0    50   ~ 0
+scope first inverter without cap
+$Comp
+L Resistors:R R1
+U 1 1 5D7CC3F5
+P 3750 3500
+F 0 "R1" V 3543 3500 50  0000 C CNN
+F 1 "47k" V 3634 3500 50  0000 C CNN
+F 2 "PRJ-003:R_P10.16" V 3680 3500 50  0001 C CNN
+F 3 "" H 3750 3500 50  0001 C CNN
+	1    3750 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors:R R2
+U 1 1 5D7CCC54
+P 3750 4100
+F 0 "R2" H 3700 4100 50  0000 R CNN
+F 1 "470k" H 3700 4200 50  0000 R CNN
+F 2 "PRJ-003:R_P10.16" V 3680 4100 50  0001 C CNN
+F 3 "" H 3750 4100 50  0001 C CNN
+	1    3750 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D7CD4F4
+P 3450 4300
+F 0 "SW1" H 3450 4493 50  0000 C CNN
+F 1 "SW_Push" H 3450 4494 50  0001 C CNN
+F 2 "PRJ-003:E_WIRE_PAD_2x" H 3450 4500 50  0001 C CNN
+F 3 "~" H 3450 4500 50  0001 C CNN
+	1    3450 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4300 3150 4300
+Wire Wire Line
+	4350 3500 3900 3500
+Wire Wire Line
+	3600 3500 3150 3500
+Wire Wire Line
+	3650 4300 3750 4300
+$Comp
+L Capacitors:C C2
+U 1 1 5D7D0420
+P 3750 4750
+F 0 "C2" H 3865 4796 50  0000 L CNN
+F 1 "47n" H 3865 4705 50  0000 L CNN
+F 2 "PRJ-003:C_MKS2F024701C00KSSD" H 3788 4600 50  0001 C CNN
+F 3 "~" H 3750 4750 50  0001 C CNN
+	1    3750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:C C1
+U 1 1 5D7D0C5D
+P 3150 4750
+F 0 "C1" H 3265 4796 50  0000 L CNN
+F 1 "4n7" H 3265 4705 50  0000 L CNN
+F 2 "PRJ-003:C_FKS2G014701A00KSSD" H 3188 4600 50  0001 C CNN
+F 3 "~" H 3150 4750 50  0001 C CNN
+	1    3150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:R R6
+U 1 1 5D7D24B2
+P 4350 4750
+F 0 "R6" H 4280 4704 50  0000 R CNN
+F 1 "2k2" H 4280 4795 50  0000 R CNN
+F 2 "PRJ-003:R_P10.16" V 4280 4750 50  0001 C CNN
+F 3 "" H 4350 4750 50  0001 C CNN
+	1    4350 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diodes_Light_Emitting:LED_ALT D4
+U 1 1 5D81EAA5
+P 4350 4300
+F 0 "D4" V 4389 4183 50  0000 R CNN
+F 1 "LED" V 4298 4183 50  0000 R CNN
+F 2 "PRJ-003:E_WIRE_PAD_2x" H 4350 4300 50  0001 C CNN
+F 3 "~" H 4350 4300 50  0001 C CNN
+	1    4350 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3900 5000 3900
+Wire Notes Line
+	9350 4950 9350 3450
+Text Notes 2050 5450 0    50   ~ 0
+Note changes in caps \n(100n -> 4n7,220n -> 47n; \nalso for 9V 40106)\nand resistors (100k -> 47k,\n1M -> 470k) 
+$Comp
+L Logic:Texas_Instruments_CD40106BE U2
+U 1 1 5DD37F7F
+P 3450 3900
+F 0 "U2" H 3450 4163 50  0000 C CNN
+F 1 "40106" H 3450 4103 50  0000 C CNN
+F 2 "Logic_THT:Texas_Instruments_CD40106BE" H 3450 3900 20  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd40106b.pdf" H 3500 3900 50  0001 C CNN
+	1    3450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic:Texas_Instruments_CD40106BE U2
+U 2 1 5DD3A134
+P 4050 3900
+F 0 "U2" H 4050 4163 50  0000 C CNN
+F 1 "40106" H 4050 4103 50  0001 C CNN
+F 2 "Logic_THT:Texas_Instruments_CD40106BE" H 4050 3900 20  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd40106b.pdf" H 4100 3900 50  0001 C CNN
+	2    4050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic:Texas_Instruments_CD40106BE U2
+U 3 1 5DD3B194
+P 4650 3900
+F 0 "U2" H 4650 4163 50  0000 C CNN
+F 1 "40106" H 4650 4103 50  0001 C CNN
+F 2 "Logic_THT:Texas_Instruments_CD40106BE" H 4650 3900 20  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd40106b.pdf" H 4700 3900 50  0001 C CNN
+	3    4650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic:Texas_Instruments_CD40106BE U2
+U 4 1 5DD3C296
+P 4500 5750
+F 0 "U2" H 4628 5773 39  0000 L CNB
+F 1 "40106" H 4628 5713 20  0000 L CNB
+F 2 "Logic_THT:Texas_Instruments_CD40106BE" H 4500 5750 20  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd40106b.pdf" H 4550 5750 50  0001 C CNN
+	4    4500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic:Texas_Instruments_CD40106BE U2
+U 5 1 5DD3D082
+P 3450 6350
+F 0 "U2" H 3450 6613 39  0000 C CNB
+F 1 "40106" H 3450 6553 20  0000 C CNB
+F 2 "Logic_THT:Texas_Instruments_CD40106BE" H 3450 6350 20  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd40106b.pdf" H 3500 6350 50  0001 C CNN
+	5    3450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic:Texas_Instruments_CD40106BE U2
+U 6 1 5DD3E16A
+P 3450 6750
+F 0 "U2" H 3450 7013 39  0000 C CNB
+F 1 "40106" H 3450 6953 20  0000 C CNB
+F 2 "Logic_THT:Texas_Instruments_CD40106BE" H 3450 6750 20  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd40106b.pdf" H 3500 6750 50  0001 C CNN
+	6    3450 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic:Texas_Instruments_CD40106BE U2
+U 7 1 5DD3EF3E
+P 3450 7150
+F 0 "U2" H 3450 7413 39  0000 C CNB
+F 1 "40106" H 3450 7353 20  0000 C CNB
+F 2 "Logic_THT:Texas_Instruments_CD40106BE" H 3450 7150 20  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd40106b.pdf" H 3500 7150 50  0001 C CNN
+	7    3450 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4900 4350 5000
+Wire Wire Line
+	3150 3500 3150 3900
+Wire Wire Line
+	4350 3500 4350 3900
+Connection ~ 3150 3900
+Wire Wire Line
+	3150 3900 3150 4300
+Connection ~ 4350 3900
+Wire Wire Line
+	4350 5000 3750 5000
+Wire Wire Line
+	3750 5000 3750 4900
+Connection ~ 4350 5000
+Wire Wire Line
+	3750 5000 3150 5000
+Wire Wire Line
+	3150 5000 3150 4900
+Connection ~ 3750 5000
+Connection ~ 3150 4300
+Wire Wire Line
+	3750 3950 3750 3900
+Connection ~ 3750 3900
+Wire Wire Line
+	3750 4250 3750 4300
+Connection ~ 3750 4300
+$Comp
+L Transistors_BJT:ON_Semi_2N3904TAR Q2
+U 1 1 5DD5779D
+P 6050 4500
+F 0 "Q2" H 5900 4550 50  0000 L CNN
+F 1 "2N3904" H 5850 4650 50  0000 L CNN
+F 2 "PRJ-003:Q_P2.54" H 6050 4500 20  0001 C CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3904-D.pdf" H 6050 4500 50  0001 L CNN
+	1    6050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistors_BJT:ON_Semi_2N3906TAR Q1
+U 1 1 5DD584BE
+P 5700 4200
+F 0 "Q1" H 5550 4150 50  0000 L CNN
+F 1 "2N3906" H 5450 4050 50  0000 L CNN
+F 2 "PRJ-003:Q_P2.54" H 5700 4200 20  0001 C CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.pdf" H 5700 4200 50  0001 L CNN
+	1    5700 4200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4350 3900 4350 4150
+Wire Wire Line
+	4350 4450 4350 4600
+$Comp
+L Relays:Kemet_EA2-5SNJ K1
+U 2 1 5DE8E208
+P 7350 4350
+F 0 "K1" H 7762 4398 39  0000 L CNB
+F 1 "EA2-5SNJ" H 7762 4338 20  0000 L CNB
+F 2 "PRJ-003:U_DIP-10" H 7550 4250 50  0001 L CNN
+F 3 "https://content.kemet.com/datasheets/KEM_R7001_EA2_EB2.pdf" H 7550 4450 50  0001 C CNN
+	2    7350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relays:Kemet_EA2-5SNJ K1
+U 3 1 5DE8E8C9
+P 8050 4350
+F 0 "K1" H 8462 4398 39  0000 L CNB
+F 1 "EA2-5SNJ" H 8462 4338 20  0000 L CNB
+F 2 "PRJ-003:U_DIP-10" H 8250 4250 50  0001 L CNN
+F 3 "https://content.kemet.com/datasheets/KEM_R7001_EA2_EB2.pdf" H 8250 4450 50  0001 C CNN
+	3    8050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3900 5800 3900
+Wire Wire Line
+	5450 3900 5400 3900
+Wire Wire Line
+	3750 4300 3750 4600
+Wire Wire Line
+	3150 4300 3150 4600
+Wire Wire Line
+	5400 5000 5800 5000
+Wire Wire Line
+	5500 4200 5400 4200
+$Comp
+L Connectors_Jacks_Audio_6.35:Amphenol_ACJS-MHOM J1
+U 1 1 5DE96215
+P 7150 3250
+F 0 "J1" H 7132 3611 39  0000 C CNB
+F 1 "Amphenol_ACJS-MHOM" H 7132 3552 20  0000 C CNN
+F 2 "PRJ-003:J_AC" H 7100 3250 20  0001 C CNN
+F 3 "https://www.amphenol-sine.com/pdf/datasheet/ACJS-MHOM.pdf" H 7150 3250 50  0001 C CNN
+	1    7150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connectors_Jacks_Audio_6.35:Amphenol_ACJS-MHOM J2
+U 1 1 5DE970EA
+P 8000 3250
+F 0 "J2" H 7982 3611 39  0000 C CNB
+F 1 "Amphenol_ACJS-MHOM" H 7982 3552 20  0000 C CNN
+F 2 "PRJ-003:J_AC" H 7950 3250 20  0001 C CNN
+F 3 "https://www.amphenol-sine.com/pdf/datasheet/ACJS-MHOM.pdf" H 8000 3250 50  0001 C CNN
+	1    8000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3900 5400 4200
+Connection ~ 5400 4200
+Wire Wire Line
+	5400 4200 5400 4600
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E68BD7E
+P 5200 3900
+F 0 "SW2" H 5200 4093 50  0000 C CNN
+F 1 "SW_Push" H 5200 4094 50  0001 C CNN
+F 2 "PRJ-003:E_WIRE_PAD_2x" H 5200 4100 50  0001 C CNN
+F 3 "~" H 5200 4100 50  0001 C CNN
+	1    5200 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 3900
+Wire Wire Line
+	4350 5000 5400 5000
+Connection ~ 5400 5000
+Connection ~ 6550 5000
+$Comp
+L power:+9V #PWR0101
+U 1 1 5E690A17
+P 4500 5600
+F 0 "#PWR0101" H 4500 5450 50  0001 C CNN
+F 1 "+9V" H 4515 5773 50  0000 C CNN
+F 2 "" H 4500 5600 50  0001 C CNN
+F 3 "" H 4500 5600 50  0001 C CNN
+	1    4500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E691452
+P 4500 5900
+F 0 "#PWR0102" H 4500 5650 50  0001 C CNN
+F 1 "GND" H 4505 5727 50  0000 C CNN
+F 2 "" H 4500 5900 50  0001 C CNN
+F 3 "" H 4500 5900 50  0001 C CNN
+	1    4500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E6918D0
+P 3150 6350
+F 0 "#PWR0103" H 3150 6100 50  0001 C CNN
+F 1 "GND" H 3155 6177 50  0000 C CNN
+F 2 "" H 3150 6350 50  0001 C CNN
+F 3 "" H 3150 6350 50  0001 C CNN
+	1    3150 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E6920D5
+P 3150 6750
+F 0 "#PWR0104" H 3150 6500 50  0001 C CNN
+F 1 "GND" H 3155 6577 50  0000 C CNN
+F 2 "" H 3150 6750 50  0001 C CNN
+F 3 "" H 3150 6750 50  0001 C CNN
+	1    3150 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E6924B1
+P 3150 7150
+F 0 "#PWR0105" H 3150 6900 50  0001 C CNN
+F 1 "GND" H 3155 6977 50  0000 C CNN
+F 2 "" H 3150 7150 50  0001 C CNN
+F 3 "" H 3150 7150 50  0001 C CNN
+	1    3150 7150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3750 7150
+NoConn ~ 3750 6750
+NoConn ~ 3750 6350
+$EndSCHEMATC

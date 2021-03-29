@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+LIBS:#210-000-S1A - Photomodule PCB [LDRs]-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Resistors:KE-10720 LDR1
+U 1 1 5D8C8084
+P 3800 2650
+F 0 "LDR1" H 3900 2700 50  0000 L CNN
+F 1 "KE-10720" H 3900 2600 50  0000 L CNN
+F 2 "PRJ-003:R_LDR" V 3850 2400 50  0001 L CNN
+F 3 "" H 3800 2600 50  0001 C CNN
+F 4 "#210-001" H 3870 2796 50  0001 C CNN "PBS #"
+	1    3800 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Resistors:KE-10720 LDR3
+U 1 1 5D8C909F
+P 4450 2650
+F 0 "LDR3" H 4550 2700 50  0000 L CNN
+F 1 "KE-10720" H 4550 2600 50  0000 L CNN
+F 2 "PRJ-003:R_LDR" V 4500 2400 50  0001 L CNN
+F 3 "" H 4450 2600 50  0001 C CNN
+F 4 "#210-001" H 4520 2796 50  0001 C CNN "PBS #"
+	1    4450 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Resistors:KE-10720 LDR5
+U 1 1 5D8C9610
+P 5100 2650
+F 0 "LDR5" H 5200 2700 50  0000 L CNN
+F 1 "KE-10720" H 5200 2600 50  0000 L CNN
+F 2 "PRJ-003:R_LDR" V 5150 2400 50  0001 L CNN
+F 3 "" H 5100 2600 50  0001 C CNN
+F 4 "#210-001" H 5170 2796 50  0001 C CNN "PBS #"
+	1    5100 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Resistors:KE-10720 LDR2
+U 1 1 5D8C961B
+P 5750 2650
+F 0 "LDR2" H 5850 2700 50  0000 L CNN
+F 1 "KE-10720" H 5850 2600 50  0000 L CNN
+F 2 "PRJ-003:R_LDR" V 5800 2400 50  0001 L CNN
+F 3 "" H 5750 2600 50  0001 C CNN
+F 4 "#210-001" H 5820 2796 50  0001 C CNN "PBS #"
+	1    5750 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Resistors:KE-10720 LDR4
+U 1 1 5D8CA282
+P 6400 2650
+F 0 "LDR4" H 6500 2600 50  0000 L CNN
+F 1 "KE-10720" H 6500 2700 50  0000 L CNN
+F 2 "PRJ-003:R_LDR" V 6450 2400 50  0001 L CNN
+F 3 "" H 6400 2600 50  0001 C CNN
+F 4 "#210-001" H 6470 2796 50  0001 C CNN "PBS #"
+	1    6400 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Resistors:KE-10720 LDR6
+U 1 1 5D8CA28D
+P 7050 2650
+F 0 "LDR6" H 7150 2600 50  0000 L CNN
+F 1 "KE-10720" H 7150 2700 50  0000 L CNN
+F 2 "PRJ-003:R_LDR" V 7100 2400 50  0001 L CNN
+F 3 "" H 7050 2600 50  0001 C CNN
+F 4 "#210-001" H 7120 2796 50  0001 C CNN "PBS #"
+	1    7050 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diodes_Light_Emitting:LED_ALT D1
+U 1 1 5D8CB6A1
+P 5450 3700
+F 0 "D1" V 5489 3582 50  0000 R CNN
+F 1 "LED" V 5398 3582 50  0000 R CNN
+F 2 "PRJ-003:D_LED" H 5450 3700 50  0001 C CNN
+F 3 "~" H 5450 3700 50  0001 C CNN
+F 4 "#210-003" H 5489 3682 50  0001 C CNN "PBS #"
+	1    5450 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5DBF5EF9
+P 6500 3700
+F 0 "J2" H 6450 4000 50  0000 L CNN
+F 1 "Pin_Header_01x05" H 6150 3350 50  0000 L CNN
+F 2 "PRJ-003:E_HEADER_1x05_P2.54" H 6500 3700 50  0001 C CNN
+F 3 "~" H 6500 3700 50  0001 C CNN
+F 4 "#210-002" H 6580 3842 50  0001 C CNN "PBS #"
+	1    6500 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5DBF583A
+P 4300 3700
+F 0 "J1" H 4250 4000 50  0000 L CNN
+F 1 "Pin_Header_01x05" H 3950 3350 50  0000 L CNN
+F 2 "PRJ-003:E_HEADER_1x05_P2.54" H 4300 3700 50  0001 C CNN
+F 3 "~" H 4300 3700 50  0001 C CNN
+F 4 "#210-002" H 4380 3842 50  0001 C CNN "PBS #"
+	1    4300 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 2800 3    50   Input ~ 0
+PM_4_9
+Text GLabel 4450 2800 3    50   Input ~ 0
+PM_4_9
+Text GLabel 5100 2800 3    50   Input ~ 0
+PM_4_9
+Text GLabel 5750 2800 3    50   Input ~ 0
+PM_4_9
+Text GLabel 6400 2800 3    50   Input ~ 0
+PM_4_9
+Text GLabel 7050 2800 3    50   Input ~ 0
+PM_4_9
+Text GLabel 3800 2500 1    50   Input ~ 0
+PM_3
+Text GLabel 4450 2500 1    50   Input ~ 0
+PM_5
+Text GLabel 5100 2500 1    50   Input ~ 0
+PM_6
+Text GLabel 5750 2500 1    50   Input ~ 0
+PM_7
+Text GLabel 6400 2500 1    50   Input ~ 0
+PM_8
+Text GLabel 7050 2500 1    50   Input ~ 0
+PM_10
+Text GLabel 5450 3550 1    50   Input ~ 0
+PM_2
+Text GLabel 5450 3850 3    50   Input ~ 0
+PM_1
+Text GLabel 4100 3500 0    50   Input ~ 0
+PM_1
+Text GLabel 4100 3600 0    50   Input ~ 0
+PM_2
+Text GLabel 4100 3700 0    50   Input ~ 0
+PM_3
+Text GLabel 4100 3800 0    50   Input ~ 0
+PM_4_9
+Text GLabel 4100 3900 0    50   Input ~ 0
+PM_5
+Text GLabel 6700 3500 2    50   Input ~ 0
+PM_10
+Text GLabel 6700 3600 2    50   Input ~ 0
+PM_4_9
+Text GLabel 6700 3700 2    50   Input ~ 0
+PM_8
+Text GLabel 6700 3800 2    50   Input ~ 0
+PM_7
+Text GLabel 6700 3900 2    50   Input ~ 0
+PM_6
+Text Notes 3850 4850 0    50   ~ 0
+Waitrony KE-10720 specs:\n- R(On): min 10k, max 20k (10 Lux, 2856K light source)\n- R(Off): min 500k\n- Peak spectral response: min 550 nm, max 650 nm
+$EndSCHEMATC

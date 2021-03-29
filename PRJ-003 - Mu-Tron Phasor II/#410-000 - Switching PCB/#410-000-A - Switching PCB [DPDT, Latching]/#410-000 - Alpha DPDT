@@ -1,0 +1,17 @@
+"Source:","D:\Sync\Sync - Projects\PRJ-003 - Mu-Tron Phasor II\#410-000 - Switching PCB\#410-000 - Alpha DPDT\#410-000 - Alpha DPDT.sch"
+"Date:","2019-12-11 08:03:02"
+"Tool:","Eeschema (5.1.4)-1"
+"Generator:","C:\Program Files\KiCad\bin\scripting\plugins/bom_csv_grouped_by_value.py"
+"Component Count:","1"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"","","SW1","SW_DPDT_x2","Switch:SW_DPDT_x2","SA_Switches_THT:Alpha_Taiwan_SF12020F-0202-20R-L-011",""
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"1","1","SW1","SW_DPDT_x2","Switch:SW_DPDT_x2","SA_Switches_THT:Alpha_Taiwan_SF12020F-0202-20R-L-011",""

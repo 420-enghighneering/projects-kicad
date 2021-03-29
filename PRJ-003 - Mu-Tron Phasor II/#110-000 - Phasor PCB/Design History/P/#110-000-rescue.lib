@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Photomodule-photomodule
+#
+DEF Photomodule-photomodule PM 0 0 Y Y 7 L N
+F0 "PM" 100 50 50 H V C CNN
+F1 "Photomodule-photomodule" 300 50 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 50 50 -50 0 1 0 f
+X ~ 10 0 150 100 D 50 50 1 1 I
+X ~ 4 0 -150 100 U 50 50 1 1 I
+X ~ 9 0 -150 100 U 50 50 1 1 I N
+X ~ 4 0 -150 100 U 50 50 2 1 I
+X ~ 8 0 150 100 D 50 50 2 1 I
+X ~ 9 0 -150 100 U 50 50 2 1 I N
+X ~ 4 0 -150 100 U 50 50 3 1 I
+X ~ 7 0 150 100 D 50 50 3 1 I
+X ~ 9 0 -150 100 U 50 50 3 1 I N
+X ~ 4 0 -150 100 U 50 50 4 1 I
+X ~ 6 0 150 100 D 50 50 4 1 I
+X ~ 9 0 -150 100 U 50 50 4 1 I N
+X ~ 4 0 -150 100 U 50 50 5 1 I
+X ~ 5 0 150 100 D 50 50 5 1 I
+X ~ 9 0 -150 100 U 50 50 5 1 I N
+X ~ 3 0 150 100 D 50 50 6 1 I
+X ~ 4 0 -150 100 U 50 50 6 1 I
+X ~ 9 0 -150 100 U 50 50 6 1 I N
+X ~ 1 0 -150 100 U 50 50 7 1 I
+X ~ 2 0 150 100 D 50 50 7 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

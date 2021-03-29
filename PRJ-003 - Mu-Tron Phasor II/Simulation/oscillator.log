@@ -1,0 +1,22 @@
+Circuit: * D:\Sync\Sync - Projects\PRJ-003 - Mu-Tron Phasor II\Simulation\oscillator.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sun Dec 15 09:06:00 2019
+Total elapsed time: 0.710 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 16220
+traniter = 16211
+tranpoints = 4577
+accept = 3600
+rejected = 977
+matrix size = 18
+fillins = 12
+solver = Normal
+Thread vector: 10.0/7.7[2] 1.6/2.7[1] 1.5/2.0[1] 0.6/1.5[1]  2592/500
+Matrix Compiler1: 1.83 KB object code size  0.5/0.4/[0.1]
+Matrix Compiler2: 2.23 KB object code size  0.4/0.4/[0.2]
+

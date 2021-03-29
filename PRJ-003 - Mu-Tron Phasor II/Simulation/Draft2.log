@@ -1,0 +1,23 @@
+Circuit: * D:\Sync\Sync - Projects\PRJ-003 - Mu-Tron Phasor II\Simulation\Draft2.asc
+
+WARNING: Node D1:4 is floating.
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Oct 09 19:56:45 2020
+Total elapsed time: 0.720 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 15289
+traniter = 15279
+tranpoints = 2977
+accept = 2434
+rejected = 543
+matrix size = 10
+fillins = 8
+solver = Normal
+Matrix Compiler1: 782 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+
